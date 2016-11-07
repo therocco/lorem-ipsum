@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>&lt;lorem-ipsum&gt; Custom Element</title>
+    <style type="text/css">
+        code {
+            background: #efefef;
+            line-height: 1.42;
+            padding:10px;
+            border-radius:3px;
+            display: block;
+        }
+        h4 { text-transform: uppercase; }
+        lorem-ipsum { clear:both; }
+    </style>
+</head>
+<body>
+    <h1>&lt;lorem-ipsum&gt; Custom Element</h1>
+
+    <hr />
+
+    <!-- demo -->
+    <h3>Paragraph</h3>
+    <code>
+        &lt;lorem-ipsum type="paragraph" length="3"&gt;&lt;/lorem-ipsum&gt;
+    </code>
+    <div>
+        <lorem-ipsum type="paragraph" length="3"></lorem-ipsum>
+    </div>
+
+    <h3>Words</h3>
+    <code>
+        &lt;lorem-ipsum type="words" length="[5, 20]"&gt;&lt;/lorem-ipsum&gt;
+    </code>
+    <div>
+        <p><lorem-ipsum type="words" length="[5, 20]"></lorem-ipsum></p>
+    </div>
+
+    <h3>Lists</h3>
+    <code>
+        &lt;lorem-ipsum type="list" length="5"&gt;&lt;/lorem-ipsum&gt;
+    </code>
+    <div>
+        <lorem-ipsum type="list" length="5"></lorem-ipsum>
+    </div>
+
+    <hr />
+
+    <h3>Transcluding HTML Elements</h3>
+    <code>
+        &lt;lorem-ipsum type="paragraph" length="1"&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;ul&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;button&gt;Spin Me&lt;/button&gt;&lt;/li&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;strong&gt;Right Round&lt;/strong&gt;&lt;/li&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&gt;&lt;small&gt;Like A Record &lt;sup>Baby&lt;/sup&gt;&lt;/small&gt;&lt;/li&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;em&gt;Right round round round&lt;/em&gt;&lt;/li&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br />
+        &lt;/lorem-ipsum&gt;
+    </code>
+    <div>
+        <lorem-ipsum type="paragraph" length="1">
+            <ul>
+                <li><button>Spin Me</button></li>
+                <li><strong>Right Round</strong></li>
+                <li><small>Like A Record <sup>Baby</sup></small></li>
+                <li><em>Right round round round</em></li>
+            </ul>
+        </lorem-ipsum>
+    </div>
+
+    <h3>Nesting &lt;lorem-ipsum&gt; Elements</h3>
+    <code>
+        &lt;lorem-ipsum type="paragraph" length="2"&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;h4&gt;&lt;lorem-ipsum type="words" length="[2, 5]"&gt;&lt;/h4&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;lorem-ipsum type="list" length="6"&gt;&lt;/lorem-ipsum&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;h4&gt;&lt;lorem-ipsum type="words" length="3"&gt;&lt;/h4&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;lorem-ipsum type="list" length="3"&gt;&lt;/lorem-ipsum&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;h4&gt;&lt;lorem-ipsum type="words" length="[2, 5]"&gt;&lt;/h4&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;lorem-ipsum type="list" length="10"&gt;&lt;/lorem-ipsum&gt;<br />
+        &nbsp;&nbsp;&nbsp; &lt;p&gt;&lt;lorem-ipsum type="words" length="[20, 50]"&gt;&lt;/p&gt;<br />
+        &lt;/lorem-ipsum&gt;
+    </code>
+    <div>
+        <lorem-ipsum type="paragraph" length="2">
+            <h4><lorem-ipsum type="words" length="[2, 5]"></h4>
+            <lorem-ipsum type="list" length="6"></lorem-ipsum>
+            <h4><lorem-ipsum type="words" length="3"></h4>
+            <lorem-ipsum type="list" length="3"></lorem-ipsum>
+            <h4><lorem-ipsum type="words" length="[2, 5]"></h4>
+            <lorem-ipsum type="list" length="10"></lorem-ipsum>
+            <p><lorem-ipsum type="words" length="[20, 50]"></lorem-ipsum></p>
+        </lorem-ipsum>
+    </div>
+
+
+
+    <!-- add in custom element script -->
+    <script src="lorem-ipsum.js" type="text/javascript" async></script>
+</body>
+</html>
