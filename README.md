@@ -1,4 +1,4 @@
-# <lorem-ipsum> Custom Element
+# `<lorem-ipsum>` Custom Element
 
 The `<lorem-ipsum>` component is built using the HTML Custom Elements v1 spec. This element takes two attributes:
 
