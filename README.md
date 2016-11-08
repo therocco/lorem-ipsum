@@ -6,12 +6,18 @@ The `<lorem-ipsum>` component is built using the HTML Custom Elements v1 spec. T
 - `length` - `{number|number[]}` a number or range of numbers to use to generate random Lorem Ipsum text.
 
 ### Paragraph
-```html<lorem-ipsum type="paragraph" length="3"></lorem-ipsum>```
+```html
+<lorem-ipsum type="paragraph" length="3"></lorem-ipsum>
+```
 
 ### Words
-```html<lorem-ipsum type="words" length="[5, 20]"></lorem-ipsum>```
+```html
+<lorem-ipsum type="words" length="[5, 20]"></lorem-ipsum>
+```
 ### Lists
-```html<lorem-ipsum type="list" length="5"></lorem-ipsum>```
+```html
+<lorem-ipsum type="list" length="5"></lorem-ipsum>
+```
 ### Transcluding HTML Elements
 ```html
 <lorem-ipsum type="paragraph" length="1">
