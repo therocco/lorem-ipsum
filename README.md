@@ -41,3 +41,10 @@ The `<lorem-ipsum>` component is built using the HTML Custom Elements v1 spec. T
     <p><lorem-ipsum type="words" length="[20, 50]"></p>
 </lorem-ipsum>
 ```
+
+-----------
+#### Donate
+
+- **BTC:** 1NerV6wXVnUZceTp5KUgHiwJt1Pqk7TDRT
+- **ETH:** 0x98f7ff902157e1a3d1476e8fcfb843fdb3212b92
+- **LSK:** 4214091785427732085L
