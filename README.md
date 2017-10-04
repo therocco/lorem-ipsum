@@ -45,6 +45,5 @@ The `<lorem-ipsum>` component is built using the HTML Custom Elements v1 spec. T
 -----------
 #### Donate
 
-- **BTC:** 1NerV6wXVnUZceTp5KUgHiwJt1Pqk7TDRT
-- **ETH:** 0x98f7ff902157e1a3d1476e8fcfb843fdb3212b92
-- **LSK:** 4214091785427732085L
+- **BTC:** 18o3S3rzdBqfUndc4pZm9dNUrNJ5zijDon
+- **ETH:** 0x9289E1B3a846061B14E81FD521a3ac910EC908A7
